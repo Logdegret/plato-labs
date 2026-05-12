@@ -3,92 +3,91 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Plato Labs | App Studio Launching Golf Claw</title>
+    <title>Plato Labs | Independent App Studio</title>
     <meta
       name="description"
-      content="Plato Labs is launching Golf Claw, an iOS golf app that uses AI to analyze swing videos and help players improve."
+      content="Plato Labs is an independent app studio creating focused mobile products, starting with Golf Claw for iOS."
     />
     <link rel="icon" href="logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="plato-page">
     <header class="site-header" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Plato Labs home">
+      <a class="brand" href="./" aria-label="Plato Labs home">
         <img class="brand-mark" src="logo.svg" alt="" />
         <span>Plato Labs</span>
       </a>
       <nav>
-        <a href="#golf-claw">Golf Claw</a>
+        <a href="#apps">Apps</a>
         <a href="#studio">Studio</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="golfclaw/">Golf Claw</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <canvas id="analysisCanvas" aria-hidden="true"></canvas>
-        <div class="hero-shade" aria-hidden="true"></div>
+      <section class="hero plato-hero" aria-labelledby="hero-title">
+        <div class="plato-hero-art" aria-hidden="true">
+          <img src="logo.svg" alt="" />
+        </div>
         <div class="hero-content">
           <p class="eyebrow">Independent app studio</p>
           <h1 id="hero-title">Plato Labs</h1>
           <p class="hero-copy">
-            We are building Golf Claw, an iOS app that uses AI swing analysis
-            to turn golf videos into clear, practical coaching feedback.
+            We create focused apps with clear utility, strong product taste,
+            and enough polish to earn a permanent spot on the home screen.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#golf-claw">Explore Golf Claw</a>
-            <a class="button secondary" href="privacy.html">Privacy Policy</a>
-            <a class="button secondary" href="mailto:hello@platolabs.app">Get in touch</a>
+            <a class="button primary" href="#apps">View apps</a>
+            <a class="button secondary" href="mailto:hello@platolabs.co">Get in touch</a>
           </div>
         </div>
       </section>
 
-      <section class="intro-band" aria-label="Company summary">
+      <section class="intro-band plato-band" aria-label="Company summary">
         <p>
-          Plato Labs makes small, thoughtful apps that solve one problem beautifully.
-          Golf Claw brings that approach to golf instruction: upload a swing,
-          get AI-assisted analysis, and understand what to work on next.
+          Plato Labs is building a portfolio of small, practical mobile products.
+          Each app starts with one sharp problem, then gets shaped until the
+          experience feels fast, useful, and calm.
         </p>
       </section>
 
-      <section class="product-section" id="golf-claw">
+      <section class="apps-section" id="apps">
         <div class="section-copy">
-          <p class="eyebrow dark">AI swing analysis for iOS</p>
-          <h2>Golf Claw helps players understand their swing.</h2>
+          <p class="eyebrow dark">First launch</p>
+          <h2>Apps from Plato Labs.</h2>
           <p>
-            Record or upload a swing video and let Golf Claw highlight the
-            movement patterns, timing, and checkpoints that matter. The goal is
-            simple: clearer feedback after every swing.
+            Our first product is Golf Claw, an iOS app that uses AI to analyze
+            golf swing videos and turn them into clear practice feedback.
           </p>
         </div>
 
-        <div class="launch-panel" aria-label="Golf Claw privacy and App Store information">
-          <p class="panel-kicker">Built for review</p>
-          <h3>AI analysis with a clear privacy policy.</h3>
-          <p>
-            Golf Claw's privacy policy explains how swing videos, diagnostics,
-            and app data may be used to power analysis and support the product.
-          </p>
-          <a class="button panel-button" href="privacy.html">View Privacy Policy</a>
-        </div>
+        <a class="app-card" href="golfclaw/" aria-label="Open Golf Claw page">
+          <img src="golfclaw-icon.png" alt="" />
+          <div>
+            <p class="panel-kicker">iOS app</p>
+            <h3>Golf Claw</h3>
+            <p>AI-powered golf swing analysis, saved drills, and progress history.</p>
+            <span>Explore product page</span>
+          </div>
+        </a>
       </section>
 
-      <section class="feature-grid" aria-label="Golf Claw features">
+      <section class="feature-grid" aria-label="Plato Labs principles">
         <article>
           <span class="feature-number">01</span>
-          <h3>Swing video review</h3>
-          <p>Capture a swing and get structured feedback without a complicated setup.</p>
+          <h3>Focused scope</h3>
+          <p>Products are built around one meaningful workflow, not feature sprawl.</p>
         </article>
         <article>
           <span class="feature-number">02</span>
-          <h3>AI-powered analysis</h3>
-          <p>Use intelligent review to identify positions, timing, and improvement areas.</p>
+          <h3>Mobile first</h3>
+          <p>Interfaces are designed for repeated use, quick decisions, and real contexts.</p>
         </article>
         <article>
           <span class="feature-number">03</span>
-          <h3>Actionable practice</h3>
-          <p>Turn each analysis into focused notes for your next practice session.</p>
+          <h3>Launch ready</h3>
+          <p>Marketing, support, privacy, and product surfaces are treated as one system.</p>
         </article>
       </section>
 
@@ -100,26 +99,24 @@
         <p>
           Plato Labs is where careful product thinking meets crisp execution.
           We keep scope intentional, polish the details that users actually feel,
-          and ship apps that earn their place on the home screen.
+          and ship apps that are simple enough to understand and useful enough to keep.
         </p>
       </section>
 
       <section class="contact-section" id="contact">
-        <p class="eyebrow dark">Follow the launch</p>
-        <h2>Golf Claw is coming to iOS.</h2>
-        <p>
-          Want early updates, press details, or partnership conversations?
-          Reach Plato Labs directly.
-        </p>
-        <a class="button contact" href="mailto:hello@platolabs.app">hello@platolabs.app</a>
+        <p class="eyebrow dark">Contact</p>
+        <h2>Have a product question or partnership idea?</h2>
+        <p>Reach Plato Labs directly.</p>
+        <a class="button contact" href="mailto:hello@platolabs.co">hello@platolabs.co</a>
       </section>
     </main>
 
     <footer>
       <span>© 2026 Plato Labs</span>
       <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="mailto:hello@platolabs.app">Contact</a>
+        <a href="golfclaw/">Golf Claw</a>
+        <a href="privacy/">Golf Claw Privacy</a>
+        <a href="mailto:hello@platolabs.co">Contact</a>
       </div>
     </footer>
 
