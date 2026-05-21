@@ -21,9 +21,9 @@ function drawAnalysis() {
   ctx.clearRect(0, 0, width, height);
 
   const sky = ctx.createLinearGradient(0, 0, width, height);
-  sky.addColorStop(0, "#e7d535");
-  sky.addColorStop(0.36, "#006430");
-  sky.addColorStop(1, "#002318");
+  sky.addColorStop(0, "#252115");
+  sky.addColorStop(0.42, "#0b0a08");
+  sky.addColorStop(1, "#000000");
   ctx.fillRect(0, 0, width, height);
 
   drawGrid();
@@ -37,7 +37,7 @@ function drawAnalysis() {
 
 function drawGrid() {
   const spacing = Math.max(54, width * 0.07);
-  ctx.strokeStyle = "rgba(247, 250, 248, 0.13)";
+  ctx.strokeStyle = "rgba(246, 220, 137, 0.12)";
   ctx.lineWidth = 1;
 
   for (let x = -spacing; x < width + spacing; x += spacing) {
@@ -61,7 +61,7 @@ function drawSignalRings() {
 
   for (let i = 0; i < 5; i += 1) {
     const pulse = (Math.sin(motionPhase * 1.5 + i) + 1) * 0.5;
-    ctx.strokeStyle = `rgba(231, 213, 53, ${0.14 + pulse * 0.16})`;
+    ctx.strokeStyle = `rgba(246, 220, 137, ${0.14 + pulse * 0.16})`;
     ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.arc(x, y, width * (0.07 + i * 0.045 + pulse * 0.01), 0, Math.PI * 2);
@@ -97,13 +97,13 @@ function drawGolferTrace() {
   line(hipX, hipY, hipX - scale * 0.2, baseY);
   line(hipX, hipY, hipX + scale * 0.18, baseY);
 
-  ctx.strokeStyle = "rgba(231, 213, 53, 0.78)";
+  ctx.strokeStyle = "rgba(246, 220, 137, 0.78)";
   ctx.lineWidth = Math.max(3, width * 0.003);
   ctx.beginPath();
   ctx.arc(shoulderX - scale * 0.04, shoulderY - scale * 0.04, scale * 0.66, -2.9, -0.28);
   ctx.stroke();
 
-  ctx.strokeStyle = "rgba(247, 250, 248, 0.56)";
+  ctx.strokeStyle = "rgba(255, 248, 223, 0.5)";
   ctx.setLineDash([8, 10]);
   line(shoulderX - scale * 0.48, shoulderY - scale * 0.2, shoulderX + scale * 0.54, shoulderY - scale * 0.34);
   line(hipX - scale * 0.38, hipY, hipX + scale * 0.42, hipY - scale * 0.08);
@@ -122,9 +122,9 @@ function drawMetrics() {
   ctx.font = "700 14px system-ui, sans-serif";
   rows.forEach((row, index) => {
     const y = top + index * 44;
-    ctx.fillStyle = "rgba(0, 35, 24, 0.54)";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.54)";
     ctx.fillRect(left, y, 132, 28);
-    ctx.fillStyle = "#e7d535";
+    ctx.fillStyle = "#f6dc89";
     ctx.fillText(row, left + 14, y + 19);
   });
 }
@@ -137,7 +137,7 @@ function line(x1, y1, x2, y2) {
 }
 
 function joint(x, y) {
-  ctx.fillStyle = "#e7d535";
+  ctx.fillStyle = "#f6dc89";
   ctx.beginPath();
   ctx.arc(x, y, 5, 0, Math.PI * 2);
   ctx.fill();
